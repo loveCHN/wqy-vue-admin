@@ -1,0 +1,61 @@
+@import "./reset.scss";
+@import "./vAnimate.scss";
+//设置scss全局变量
+
+//滚动条样式
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//   background: $base-menu-background;
+// }
+// ::-webkit-scrollbar-thumb {
+//   width: 10px;
+//   background-color: yellow;
+//   border-radius: 10px;
+// }
+//单行溢出变省略号
+.line-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+//多行溢出变省略号
+@mixin line-clamp($value) {
+  -webkit-line-clamp: $value;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table-edit-row {
+  background-color: #c6e2ff !important;
+  > td {
+    background-color: #c6e2ff !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    border-right: 1px solid #e5e5e5 !important;
+  }
+  &:hover {
+    background-color: #a0cfff !important;
+    > td {
+      background-color: #a0cfff !important;
+      border-bottom: 1px solid #e5e5e5 !important;
+      border-right: 1px solid #e5e5e5 !important;
+    }
+  }
+}
+.card-margin {
+  .el-card {
+    margin-bottom: 7px;
+  }
+}
+li {
+  list-style: none;
+}
+* {
+  text-decoration: none;
+}
+
+.table-cell {
+  vertical-align: top !important;
+}

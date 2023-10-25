@@ -1,0 +1,752 @@
+{
+  "code": 200,
+  "data": [
+    {
+      "path": "/home/index",
+      "name": "home",
+      "component": "/Home/Home",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "首页",
+        "isLink": "",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/product",
+      "name": "product",
+      "meta": {
+        "icon": "Box",
+        "title": "商品管理",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/commodity/edit",
+      "children": [
+        {
+          "path": "/commodity/edit",
+          "component": "/product/Edit/Edit",
+          "name": "commodityEdit",
+          "meta": {
+            "icon": "Edit",
+            "title": "商品上架",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/commodity/edit/release",
+              "component": "/product/Edit/Release/Release",
+              "name": "Release",
+              "meta": {
+                "hidden": true,
+                "icon": "Edit",
+                "title": "发布新商品",
+                "isHide": true,
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/commodity/FreeShopping",
+          "component": "/product/FreeShopping/FreeShopping",
+          "name": "commodityFreeShopping",
+          "meta": {
+            "icon": "Edit",
+            "title": "连锁包邮",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/AutoRecord",
+          "component": "/product/AutoRecord/AutoRecord",
+          "name": "commodityAutoRecord",
+          "meta": {
+            "icon": "Edit",
+            "title": "自动上架记录",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/AddRecord",
+          "component": "/product/AddRecord/AddRecord",
+          "name": "commodityAddRecord",
+          "meta": {
+            "icon": "Edit",
+            "title": "新增商品记录",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/EntrustedDelivery",
+          "component": "/product/EntrustedDelivery/EntrustedDelivery",
+          "name": "commodityEntrustedDelivery",
+          "meta": {
+            "icon": "Edit",
+            "title": "委托配送商品",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/ImageModification",
+          "component": "/product/ImageModification/ImageModification",
+          "name": "commodityImageModification",
+          "meta": {
+            "icon": "Edit",
+            "title": "图片修改申请管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/AppModification",
+          "component": "/product/AppModification/AppModification",
+          "name": "commodityAppModification",
+          "meta": {
+            "icon": "Edit",
+            "title": "App修改名称申请申请",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/ListingModificationRecord",
+          "component": "/product/ListingModificationRecord/ListingModificationRecord",
+          "name": "commodityListingModificationRecord",
+          "meta": {
+            "icon": "Edit",
+            "title": "上架修改记录",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/ManufacturerApplication",
+          "component": "/product/ManufacturerApplication/ManufacturerApplication",
+          "name": "commodityManufacturerApplication",
+          "meta": {
+            "icon": "Edit",
+            "title": "厂家申请",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/ManufacturerQualification",
+          "component": "/product/ManufacturerQualification/ManufacturerQualification",
+          "name": "commodityManufacturerQualification",
+          "meta": {
+            "icon": "Edit",
+            "title": "厂家资质",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/commodity/OriginManagement",
+          "component": "/product/OriginManagement/OriginManagement",
+          "name": "commodityOriginManagement",
+          "meta": {
+            "icon": "Edit",
+            "title": "产地管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/BaseGoodInfo",
+          "component": "/base/BaseGoodInfo/BaseGoodInfo",
+          "name": "BaseGoodInfo",
+          "meta": {
+            "icon": "Edit",
+            "title": "商品管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/order",
+      "name": "Order",
+      "meta": {
+        "icon": "Box",
+        "title": "订单管理",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/order/AllOrders",
+      "children": [
+        {
+          "path": "/order/AllOrders",
+          "component": "/Order/AllOrders/AllOrders",
+          "name": "OrderAllOrders",
+          "meta": {
+            "icon": "Edit",
+            "title": "所有订单",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/order/Refund",
+          "component": "/Order/Refund/Refund",
+          "name": "OrderRefund",
+          "meta": {
+            "icon": "Edit",
+            "title": "退款管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/order/Settlement",
+          "component": "/Order/Settlement/Settlement",
+          "name": "OrderSettlement",
+          "meta": {
+            "icon": "Edit",
+            "title": "订单结算",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/order/CharacterRecognition",
+          "component": "/Order/CharacterRecognition/CharacterRecognition",
+          "name": "OrderCharacterRecognition",
+          "meta": {
+            "icon": "Edit",
+            "title": "快递单&文字识别记录",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/feedback",
+      "name": "Feedback",
+      "meta": {
+        "icon": "Lock",
+        "title": "用户反馈",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/feedback/AfterSale",
+      "children": [
+        {
+          "path": "/feedback/AfterSale",
+          "component": "/Feedback/AfterSale/AfterSale",
+          "name": "FeedbackAfterSale",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "售后管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/feedback/InitiateRefund",
+          "component": "/Feedback/InitiateRefund/InitiateRefund",
+          "name": "FeedbackInitiateRefund",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "客户发起退款",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/feedback/OfficialIntervention",
+          "component": "/Feedback/OfficialIntervention/OfficialIntervention",
+          "name": "FeedbackOfficialIntervention",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "平台介入",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/feedback/ComplaintsAndExpedition",
+          "component": "/Feedback/ComplaintsAndExpedition/ComplaintsAndExpedition",
+          "name": "FeedbackComplaintsAndExpedition",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "投诉和催发货",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/feedback/Evaluate",
+          "component": "/Feedback/Evaluate/Evaluate",
+          "name": "FeedbackEvaluate",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "用户评价",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/statisticAnalysis",
+      "name": "StatisticAnalysis",
+      "meta": {
+        "icon": "Lock",
+        "title": "统计分析",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/statisticAnalysis/ProcurementGuidelines",
+      "children": [
+        {
+          "path": "/statisticAnalysis/ProcurementGuidelines",
+          "component": "/statisticAnalysis/ProcurementGuidelines/ProcurementGuidelines",
+          "name": "statisticAnalysisProcurementGuidelines",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "采购指南",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/statisticAnalysis/ServiceQuality",
+          "component": "/statisticAnalysis/ServiceQuality/ServiceQuality",
+          "name": "statisticAnalysisServiceQuality",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "服务质量",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/statisticAnalysis/VarietyAnalysis",
+          "component": "/statisticAnalysis/VarietyAnalysis/VarietyAnalysis",
+          "name": "statisticAnalysisVarietyAnalysis",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "品种分析",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/statisticAnalysis/SalesReport",
+          "component": "/statisticAnalysis/SalesReport/SalesReport",
+          "name": "statisticAnalysisSalesReport",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "销售报表",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/medicineShop",
+      "name": "MedicineShop",
+      "meta": {
+        "icon": "Lock",
+        "title": "药店管理",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/medicineShop/SupplyObject",
+      "children": [
+        {
+          "path": "/medicineShop/SupplyObject",
+          "component": "/medicineShop/SupplyObject/SupplyObject",
+          "name": "medicineShopSupplyObject",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "供货对象管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/medicineShop/VipPrice",
+          "component": "/medicineShop/VipPrice/VipPrice",
+          "name": "medicineShopVipPricet",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "会员价设置",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/medicineShop/ControlSaleTeam",
+          "component": "/medicineShop/ControlSaleTeam/ControlSaleTeam",
+          "name": "medicineShopControlSaleTeam",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "控销药店组",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/medicineShop/User",
+          "component": "/medicineShop/User/User",
+          "name": "medicineShopUser",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "客户管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/medicineShop/AccountOpening",
+          "component": "/medicineShop/AccountOpening/AccountOpening",
+          "name": "medicineShopAccountOpening",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "开户管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/medicineShop/CodeModificationRecord",
+          "component": "/medicineShop/CodeModificationRecord/CodeModificationRecord",
+          "name": "medicineShopCodeModificationRecord",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "药店编码修改记录",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/shop",
+      "name": "Shop",
+      "meta": {
+        "icon": "Box",
+        "title": "店铺管理",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/shop/AccountOpening",
+      "children": [
+        {
+          "path": "/shop/AccountOpening",
+          "component": "/Shop/AccountOpening/AccountOpening",
+          "name": "ShopAccountOpening",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "开户设置",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/Invoice",
+          "component": "/Shop/Invoice/Invoice",
+          "name": "ShopInvoice",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "发票设置",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/ServiceTag",
+          "component": "/Shop/ServiceTag/ServiceTag",
+          "name": "ShopServiceTag",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "商家服务标签",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/OperationsTag",
+          "component": "/Shop/OperationsTag/OperationsTag",
+          "name": "ShopOperationsTag",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "节假日运行标签",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/Notice",
+          "component": "/Shop/Notice/Notice",
+          "name": "ShopNotice",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "店铺公告",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/Delivery",
+          "component": "/Shop/Delivery/Delivery",
+          "name": "ShopDelivery",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "配送说明",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/ImproveInformation",
+          "component": "/Shop/ImproveInformation/ImproveInformation",
+          "name": "ShopImproveInformation",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "完善资料",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/ReturnsAndExchanges",
+          "component": "/Shop/ReturnsAndExchanges/ReturnsAndExchanges",
+          "name": "ShopReturnsAndExchanges",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "退换货流程",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/shop/ShopDecoration",
+          "component": "/Shop/ShopDecoration/ShopDecoration",
+          "name": "ShopShopDecoration",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "店铺装修",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "/base",
+      "name": "base",
+      "meta": {
+        "icon": "Lock",
+        "title": "基础管理",
+        "isHide": false,
+        "isFull": false,
+        "isAffix": false,
+        "isKeepAlive": true
+      },
+      "redirect": "/base/ShopBuyOrder",
+      "children": [
+        {
+          "path": "/base/User",
+          "component": "/base/User/User",
+          "name": "User",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "用户管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/ShopBuyOrder",
+          "component": "/base/ShopBuyOrder/ShopBuyOrder",
+          "name": "ShopBuyOrder",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "药店采购订单",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/Shop",
+          "component": "/base/Shop/Shop",
+          "name": "Shop",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "药店管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/BusiDistrict",
+          "component": "/base/BusiDistrict/BusiDistrict",
+          "name": "BusiDistrict",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "商圈管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/Area",
+          "component": "/base/Area/Area",
+          "name": "Area",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "地区管理",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/CorptUserOprLog",
+          "component": "/base/CorptUserOprLog/CorptUserOprLog",
+          "name": "CorptUserOprLog",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "操作日志",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/base/TradeCorp_SP",
+          "component": "/base/TradeCorp_SP/TradeCorp_SP",
+          "name": "TradeCorp_SP",
+          "meta": {
+            "icon": "OfficeBuilding",
+            "title": "收款账户",
+            "isHide": false,
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    }
+  ],
+  "msg": "成功"
+}
